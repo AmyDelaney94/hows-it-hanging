@@ -8,7 +8,7 @@ def get_name():
     print("*********************\n")
 
     while True:
-        name_data = input("Enter your name here: \n")
+        name_data = input("Enter your name here: ")
 
         if validate_data(name_data):
             print(f"Welcome {name_data}")
