@@ -14,6 +14,7 @@ def get_name():
             print(f"Welcome {name_data}")
             break
 
+
 def validate_data(name):
     """
     Validates user input for name
@@ -25,8 +26,8 @@ def validate_data(name):
     except ValueError as error:
         print(f"Try again. {error}")
         return False
-        
-    return True 
+
+    return True
+
 
 get_name()
-
