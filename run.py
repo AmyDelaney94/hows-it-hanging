@@ -1,11 +1,14 @@
+# from pprint import pprint
+
+
 def get_name():
     """
     Welcome message and get name from user
     """
-    print("*********************")
+    print("************************")
     print("       Hangman")
     print("Guess the word to win!")
-    print("*********************\n")
+    print("************************\n")
 
     while True:
         name_data = input("Enter your name here: ")
