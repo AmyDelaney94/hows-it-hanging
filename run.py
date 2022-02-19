@@ -66,6 +66,24 @@ def instructions():
         "are wrong the hangman will start to appear. \n4. You have "
         "6 attempts to guess correctly or its Game Over!! "
     )
+    #Give option to play or return to menu.
+    print("Are you ready to play Hangman?")
 
-get_name()
-menu()
+    #Test for valid selection made
+    while True:
+        lets_go = input("Press 1 for Yes or 2 for No: ")
+
+        if lets_go == '1':
+            print("Play!")
+        elif lets_go == '2':
+            menu()
+        else:
+            print("Please make a valid choice.")
+
+
+def game():
+    get_name()
+    menu()
+
+
+game()
