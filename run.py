@@ -45,7 +45,7 @@ def menu():
         if player_choice == '1':
             instructions()
         elif player_choice == '2':
-            print('Ola')
+            print('Play Function')
         elif player_choice == '3':
             print('Exit function')
         else:
@@ -74,7 +74,7 @@ def instructions():
         lets_go = input("Press 1 for Yes or 2 for No: ")
 
         if lets_go == '1':
-            print("Play!")
+            print("Play Function")
         elif lets_go == '2':
             menu()
         else:
