@@ -1,3 +1,9 @@
+"""
+This section contains all imports
+"""
+import sys
+
+
 # from pprint import pprint
 
 
@@ -47,7 +53,7 @@ def menu():
         elif player_choice == '2':
             print('Play Function')
         elif player_choice == '3':
-            print('Exit function')
+            exit()
         else:
             print("Ooops, Please choose a valid option from the menu!")
             
@@ -80,6 +86,10 @@ def instructions():
         else:
             print("Please make a valid choice.")
 
+
+def exit():
+    print("Thanks for playing Goodbye!")
+    sys.exit()
 
 def game():
     get_name()
