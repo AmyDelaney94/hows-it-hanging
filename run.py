@@ -2,9 +2,8 @@
 This section contains all imports
 """
 import sys
-
-
-# from pprint import pprint
+from words import easy_selection
+from words import hard_selection
 
 
 def get_name():
@@ -90,7 +89,7 @@ def instructions():
 def exit():
     print("Thanks for playing Goodbye!")
     sys.exit()
-    
+
 
 def game():
     get_name()
