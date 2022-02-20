@@ -90,6 +90,7 @@ def instructions():
 def exit():
     print("Thanks for playing Goodbye!")
     sys.exit()
+    
 
 def game():
     get_name()
