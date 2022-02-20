@@ -17,10 +17,10 @@ def get_name():
     print("************************\n")
 
     while True:
-        name_data = input("Enter your name here: ")
+        name_data = input("\033[0;36mEnter your name here: ")
 
         if validate_data(name_data):
-            print(f"Welcome {name_data} \n")
+            print(f"\033[0;36mWelcome {name_data} \n")
             break
 
 
@@ -30,10 +30,10 @@ def validate_data(name):
     """
     try:
         if name == "":
-            raise ValueError("Please input a name \n")
+            raise ValueError("\033[0;31mPlease input a name \n")
 
     except ValueError as error:
-        print(f"Try again. {error}")
+        print(f"\033[0;31mTry again. {error}")
         return False
 
     return True
@@ -46,7 +46,7 @@ def menu():
     print("3. Exit \n")
 
     while True:
-        player_choice = input("Please choose from the above menu: ")
+        player_choice = input("\033[0;36mPlease choose from the above menu: ")
 
         if player_choice == '1':
             instructions()
@@ -55,7 +55,7 @@ def menu():
         elif player_choice == '3':
             exit()
         else:
-            print("Ooops, Please choose a valid option from the menu!")
+            print("\033[0;31mOoops, Please choose a valid option from the menu!")
             
 
 def instructions():
@@ -64,7 +64,7 @@ def instructions():
     """
     print(
         "\n"
-        "How to Play: \n\n"
+        "\033[0;32mHow to Play: \n\n"
         "The aim is to make the correct word by guessing "
         "the letters one at a time. \n\n1. To guess, "
         "type a letter of your choice and hit enter. \n2. If you "
@@ -77,7 +77,7 @@ def instructions():
 
     #Test for valid selection made
     while True:
-        lets_go = input("Press 1 for Yes or 2 for No: ")
+        lets_go = input("\033[0;36mPress 1 for Yes or 2 for No: ")
 
         if lets_go == '1':
             choose_word()
@@ -88,7 +88,7 @@ def instructions():
 
 
 def exit():
-    print("Thanks for playing Goodbye!")
+    print("\033[0;36mThanks for playing Goodbye!")
     sys.exit()
 
 
@@ -96,7 +96,7 @@ def choose_word():
     """
     Generates a random word from the easy or hard selection lists. 
     """
-    level_selection = ("Please choose a difficulty level: \n")
+    level_selection = ("\033[0;36mPlease choose a difficulty level: \n")
     #Test for valid selection made
     while True:
         difficulty = input("Press 1 for Easy and 2 for Hard: ")
@@ -112,8 +112,13 @@ def choose_word():
 
 
 def start_game(word):
-    
-
+    """
+    Using words from words.py, choose a random word and promt the user to guess letters. 
+    """
+    attempts = 6
+    letters = set(word)
+    guesses = []
+    #
 
 
 def game():
