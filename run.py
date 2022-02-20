@@ -2,6 +2,7 @@
 This section contains all imports
 """
 import sys
+import random
 from words import easy_selection
 from words import hard_selection
 
@@ -50,7 +51,7 @@ def menu():
         if player_choice == '1':
             instructions()
         elif player_choice == '2':
-            print('Play Function')
+            choose_word()
         elif player_choice == '3':
             exit()
         else:
@@ -79,7 +80,7 @@ def instructions():
         lets_go = input("Press 1 for Yes or 2 for No: ")
 
         if lets_go == '1':
-            print("Play Function")
+            choose_word()
         elif lets_go == '2':
             menu()
         else:
@@ -91,9 +92,32 @@ def exit():
     sys.exit()
 
 
+def choose_word():
+    """
+    Generates a random word from the easy or hard selection lists. 
+    """
+    level_selection = ("Please choose a difficulty level: \n")
+    #Test for valid selection made
+    while True:
+        difficulty = input("Press 1 for Easy and 2 for Hard: ")
+
+        if difficulty == '1':
+            word = random.choice(easy_selection)
+            start_game(word)
+        elif difficulty == '2':
+            word = random.choice(hard_selection)
+            start_game(word)
+        else:
+            print("Please make a valid choice.")
+
+
+def start_game(word):
+    
+
+
+
 def game():
     get_name()
     menu()
-
 
 game()
