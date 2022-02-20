@@ -73,7 +73,7 @@ def instructions():
         "6 attempts to guess correctly or its Game Over!! "
     )
     #Give option to play or return to menu.
-    print("Are you ready to play Hangman?")
+    print("\033[0;36mAre you ready to play Hangman?")
 
     #Test for valid selection made
     while True:

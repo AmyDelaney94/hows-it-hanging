@@ -1,31 +1,70 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# How's it Hanging
 
-Welcome AmyDelaney94,
+*Add Image of Am I responsive site with various pages open*
+Hangman is a word guessing game. The game has two levels of difficulty, easy and hard. A full description of the game can be found *here*.   
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+The deployed website can be found <a href="X">here</a>.
 
-## Reminders
+## Table of Contents
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## User Experience
+### Project Goals
+- The game is easy to navigate and user friendly.
+- The game to be interactive for the user and is responsive on mutiple devices ranging from mobile to desktop.
+- The game doesn't have a conflicting colour scheme making it easy to view and understand.
+-To provide the user with an easy to find instructions section to explain how the game works.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### User Stories
+- As a player, I want the instructions to be easily accessable.
+- As a player, I want the game to be user friendly.
+- As a player, I want the game to work on multiple devices.
+- As a player, I want the game to be fun and engaging.
+- As a player, I want there to be a selection of levels. 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### Typography
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Process Flow Chart
+Lucid Charts was used to design the logic used in the development of this game.
 
-Connect your GitHub repository and deploy as normal.
+### Game Features
+ 
+#### Technology Used
+#### Languages Used
+- Python
 
-## Constraints
+- GitPod
+    -  GitPod was used for writing code, committing, and then pushing to GitHub.
+- GitHub
+    - GitHub was used to store the project after pushing.
+- Lucid Charts
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+- Am I Responsive?
+    - Am I Responsive was used in order to see responsive design throughout the process.
 
------
-Happy coding!
+
+### Testing
+#### User Stories Testing
+
+
+
+#### Bugs:
+##### Fixed Bugs:
+
+### Deployment:
+
+
+### References:
+#### Code
+
+- W3Schools was used as a resource for solving syntax errors in my python. 
+
+- Stack Overflow Used for assistance with troubleshooting issues.
+
+### Acknowledgements
+- First I would like to thank my Partner for his love and support throughout the completion of this project.
+- I would also like to thank my mentor Marcel for his advice and support.
+- My friends for constantly testing the project on their different devices.
+- Tutor Assistance for their help and support.
+- Code Institute and its Slack community for their support and providing me with the necessary knowledge to complete this project.
