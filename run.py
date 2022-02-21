@@ -80,7 +80,7 @@ def instructions():
 
     # Test for valid selection made
     while True:
-        lets_go = input("\033[0;36mPress 1 for Yes or 2 for No: ")
+        lets_go = input("Press 1 for Yes or 2 for No: ")
 
         if lets_go == '1':
             choose_word()
@@ -102,7 +102,7 @@ def choose_word():
     """
     Generates a random word from the easy or hard selection lists.
     """
-    level_selection = ("\033[0;36mPlease choose a difficulty level: \n")
+    # level_selection = input("\033[0;36mPlease choose a difficulty level: \n")
     # Test for valid selection made
     while True:
         difficulty = input("Press 1 for Easy and 2 for Hard: ")
@@ -130,32 +130,32 @@ def start_game(word):
         show_answer = [
             letter if letter in guesses else "_" for letter in word
         ]
-        print(hangman_status(attempts))
+        # print(hangman_status(attempts))
         print(" ".join(show_answer))
         # ask player to take their turn
         # .upper used to capitalise letters to match word lists
-        players_turn = input("Please choose a letter:\n").upper()
+        players_turn = input("\033[0mPlease choose a letter:\n").upper()
         # Test for valid selection made
         if players_turn in guesses:
             print("\033[1;31mOops you already guessed ", players_turn, "\n")
             print("You have used these letters: ")
             print(" ".join(guesses))
         elif players_turn not in word:
-            print("\033[1;31mAwh try again,", players_turn, " is not right")
+            print("\033[1;31mAwh try again,", players_turn, "is not right")
             attempts -= 1
-            print("Attempts Remaining: ", attempts)
+            print("\033[0mAttempts Remaining: ", attempts)
             guesses.append(players_turn)
-            print("You have used these letters: ")
+            print("\033[0mYou have used these letters: ")
             print(" ".join(guesses))
         else:
-            print("WOO you got it! \n")
+            print("\033[0mWOO you got it! \n")
             guesses.append(players_turn)
             print("You have used these letters: ")
             print(" ".join(guesses))
             if players_turn in letters:
                 letters.remove(players_turn)
-        else:
-            print("\033[0;31mPlease make a valid choice.")
+            else:
+                print("\033[0;31mPlease make a valid choice.")
 
 
 def game():
@@ -164,6 +164,8 @@ def game():
     """
     get_name()
     menu()
+    choose_word()
+    start_game()
 
 
 game()
