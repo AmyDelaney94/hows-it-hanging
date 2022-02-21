@@ -20,7 +20,7 @@ def get_name():
         name_data = input("\033[0;36mEnter your name here: ")
 
         if validate_data(name_data):
-            print(f"\033[0;36mWelcome {name_data} \n")
+            print(f"Welcome {name_data} \n")
             break
 
 
@@ -40,6 +40,9 @@ def validate_data(name):
 
 
 def menu():
+    """
+    Function for games main menu.
+    """
     print("Main Menu: \n")
     print("1. Instructions")
     print("2. Start Game")
@@ -55,8 +58,8 @@ def menu():
         elif player_choice == '3':
             exit()
         else:
-            print("\033[0;31mOoops, Please choose a valid option from the menu!")
-            
+            print("\033[0;31mOops,Please choose a valid option from the menu!")
+
 
 def instructions():
     """
@@ -64,7 +67,7 @@ def instructions():
     """
     print(
         "\n"
-        "\033[0;32mHow to Play: \n\n"
+        "\033[0;33mHow to Play: \n\n"
         "The aim is to make the correct word by guessing "
         "the letters one at a time. \n\n1. To guess, "
         "type a letter of your choice and hit enter. \n2. If you "
@@ -72,10 +75,10 @@ def instructions():
         "are wrong the hangman will start to appear. \n4. You have "
         "6 attempts to guess correctly or its Game Over!! "
     )
-    #Give option to play or return to menu.
-    print("\033[0;36mAre you ready to play Hangman?")
+    # Give option to play or return to menu.
+    print("Are you ready to play Hangman?")
 
-    #Test for valid selection made
+    # Test for valid selection made
     while True:
         lets_go = input("\033[0;36mPress 1 for Yes or 2 for No: ")
 
@@ -84,20 +87,23 @@ def instructions():
         elif lets_go == '2':
             menu()
         else:
-            print("Please make a valid choice.")
+            print("\033[0;31mPlease make a valid choice.")
 
 
 def exit():
+    """
+    Exit game function
+    """
     print("\033[0;36mThanks for playing Goodbye!")
     sys.exit()
 
 
 def choose_word():
     """
-    Generates a random word from the easy or hard selection lists. 
+    Generates a random word from the easy or hard selection lists.
     """
     level_selection = ("\033[0;36mPlease choose a difficulty level: \n")
-    #Test for valid selection made
+    # Test for valid selection made
     while True:
         difficulty = input("Press 1 for Easy and 2 for Hard: ")
 
@@ -113,7 +119,8 @@ def choose_word():
 
 def start_game(word):
     """
-    Using words from words.py, choose a random word and promt the user to guess letters. 
+    Using words from words.py, choose a random word
+    and promt the user to guess letters.
     """
     attempts = 6
     letters = set(word)
@@ -122,7 +129,11 @@ def start_game(word):
 
 
 def game():
+    """
+    Function to call other functions used
+    """
     get_name()
     menu()
+
 
 game()
