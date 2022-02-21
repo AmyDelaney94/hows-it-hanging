@@ -58,8 +58,10 @@ Lucid Charts was used to design the logic used in the development of this game.
 ### References:
 #### Code
 
-- W3Schools was used as a resource for solving syntax errors in my python. 
-
+- W3Schools was used as a resource for solving syntax errors and for the isalpha()
+method.https://www.w3schools.com/python/ref_string_isalpha.asp
+- Askpython was used for the implementation of sys.exit()
+https://www.askpython.com/python/examples/exit-a-python-program
 - Stack Overflow Used for assistance with troubleshooting issues.
 
 ### Acknowledgements

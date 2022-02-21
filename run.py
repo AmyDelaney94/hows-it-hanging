@@ -125,7 +125,37 @@ def start_game(word):
     attempts = 6
     letters = set(word)
     guesses = []
-    #
+    # If no turns left shows right answer
+    while attempts > 0 and len(letters) > 0:
+        show_answer = [
+            letter if letter in guesses else "_" for letter in word
+        ]
+        print(hangman_status(attempts))
+        print(" ".join(show_answer))
+        # ask player to take their turn
+        # .upper used to capitalise letters to match word lists
+        players_turn = input("Please choose a letter:\n").upper()
+        # Test for valid selection made
+        if players_turn in guesses:
+            print("\033[1;31mOops you already guessed ", players_turn, "\n")
+            print("You have used these letters: ")
+            print(" ".join(guesses))
+        elif players_turn not in word:
+            print("\033[1;31mAwh try again,", players_turn, " is not right")
+            attempts -= 1
+            print("Attempts Remaining: ", attempts)
+            guesses.append(players_turn)
+            print("You have used these letters: ")
+            print(" ".join(guesses))
+        else:
+            print("WOO you got it! \n")
+            guesses.append(players_turn)
+            print("You have used these letters: ")
+            print(" ".join(guesses))
+            if players_turn in letters:
+                letters.remove(players_turn)
+        else:
+            print("\033[0;31mPlease make a valid choice.")
 
 
 def game():
