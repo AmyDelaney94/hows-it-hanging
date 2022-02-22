@@ -13,7 +13,7 @@ The deployed website can be found <a href="X">here</a>.
 - The game is easy to navigate and user friendly.
 - The game to be interactive for the user and is responsive on mutiple devices ranging from mobile to desktop.
 - The game doesn't have a conflicting colour scheme making it easy to view and understand.
--To provide the user with an easy to find instructions section to explain how the game works.
+- To provide the user with an easy to find instructions section to explain how the game works.
 
 ### User Stories
 - As a player, I want the instructions to be easily accessable.
@@ -22,13 +22,21 @@ The deployed website can be found <a href="X">here</a>.
 - As a player, I want the game to be fun and engaging.
 - As a player, I want there to be a selection of levels. 
 
-### Typography
+### Coloured Text
+- Throughout the design of the project I followed a flow chart and extended this logic to the visual design of the game. 
+    - The colour red was used for errors and wrong guesses. 
+    - The colour blue/cyan was used for input lines. 
+    - The colour yellow was used for the instructions menu.  
 
 
 ### Process Flow Chart
 Lucid Charts was used to design the logic used in the development of this game.
 
 ### Game Features
+- Choice of levels
+- Name input
+- Instructions 
+- 
  
 #### Technology Used
 #### Languages Used
