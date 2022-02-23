@@ -114,7 +114,7 @@ def choose_word():
             word = random.choice(hard_selection)
             start_game(word)
         else:
-            print("Please make a valid choice.")
+            print("\033[0;31mPlease make a valid choice.")
 
 
 def start_game(word):
