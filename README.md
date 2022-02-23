@@ -71,6 +71,8 @@ method.https://www.w3schools.com/python/ref_string_isalpha.asp
 - Askpython was used for the implementation of sys.exit()
 https://www.askpython.com/python/examples/exit-a-python-program
 - Stack Overflow Used for assistance with troubleshooting issues.
+- https://www.yawintutor.com/indentationerror-expected-an-indented-block-in-python/#:~:text=The%20python%20IndentationError%3A%20expected%20an,mix%20of%20tabs%20and%20spaces. used for fixing syntax and coding errors. 
+
 
 ### Acknowledgements
 - First I would like to thank my Partner for his love and support throughout the completion of this project.
