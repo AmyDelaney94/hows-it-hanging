@@ -43,7 +43,7 @@ def menu():
     """
     Function for games main menu.
     """
-    print("Main Menu: \n")
+    print("\033[0mMain Menu: \n")
     print("1. Instructions")
     print("2. Start Game")
     print("3. Exit \n")
@@ -67,7 +67,7 @@ def instructions():
     """
     print(
         "\n"
-        "\033[0;33mHow to Play: \n\n"
+        "\033[0;32mHow to Play: \n\n"
         "The aim is to make the correct word by guessing "
         "the letters one at a time. \n\n1. To guess, "
         "type a letter of your choice and hit enter. \n2. If you "
@@ -76,7 +76,7 @@ def instructions():
         "6 attempts to guess correctly or its Game Over!! "
     )
     # Give option to play or return to menu.
-    print("Are you ready to play Hangman?")
+    print("\033[0;36mAre you ready to play Hangman?")
 
     # Test for valid selection made
     while True:
@@ -105,7 +105,7 @@ def choose_word():
     # level_selection = input("\033[0;36mPlease choose a difficulty level: \n")
     # Test for valid selection made
     while True:
-        difficulty = input("Press 1 for Easy and 2 for Hard: ")
+        difficulty = input("\033[0;36mPress 1 for Easy and 2 for Hard: ")
 
         if difficulty == '1':
             word = random.choice(easy_selection)
@@ -128,7 +128,7 @@ def start_game(word):
     # If no turns left shows right answer
     while attempts > 0 and len(letters) > 0:
         show_answer = [
-            letter if letter in guesses else "_" for letter in word
+            letters if letters in guesses else "_" for letters in word
         ]
         # print(hangman_status(attempts))
         print(" ".join(show_answer))
