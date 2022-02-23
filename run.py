@@ -76,7 +76,7 @@ def instructions():
         "6 attempts to guess correctly or its Game Over!! "
     )
     # Give option to play or return to menu.
-    print("\033[0;36mAre you ready to play Hangman?")
+    print("\033[0;36mAre you ready to play Hangman? \n")
 
     # Test for valid selection made
     while True:
@@ -131,6 +131,7 @@ def start_game(word):
             letters if letters in guesses else "_" for letters in word
         ]
         # print(hangman_status(attempts))
+        print("\n")
         print(" ".join(show_answer))
         # ask player to take their turn
         # .upper used to capitalise letters to match word lists
@@ -156,6 +157,24 @@ def start_game(word):
                 letters.remove(players_turn)
             else:
                 print("\033[0;31mPlease make a valid choice.")
+    #Ask if they want to play again
+    print("\033[0;36mWould you like to play again?")
+    play_again()
+
+
+def play_again():
+    """
+    Function to allow player to play again or exit to the menu. 
+    """
+    while True:
+        go_again = input("Press 1 for Yes or 2 for No: ")
+
+        if go_again == '1':
+            choose_word()
+        elif go_again == '2':
+            menu()
+        else:
+            print("\033[0;31mPlease make a valid choice.")
 
 
 def game():
