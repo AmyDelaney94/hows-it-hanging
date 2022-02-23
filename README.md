@@ -25,8 +25,8 @@ The deployed website can be found <a href="X">here</a>.
 ### Coloured Text
 - Throughout the design of the project I followed a flow chart and extended this logic to the visual design of the game. 
     - The colour red was used for errors and wrong guesses. 
-    - The colour blue/cyan was used for input lines. 
-    - The colour yellow/green was used for the instructions menu.  
+    - The colour cyan was used for input lines. 
+    - The colour green was used for the instructions menu and for correct guesses.  
 
 
 ### Process Flow Chart

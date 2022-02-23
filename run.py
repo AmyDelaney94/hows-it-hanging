@@ -130,7 +130,7 @@ def start_game(word):
         show_answer = [
             letters if letters in guesses else "_" for letters in word 
         ]
-        # print(hangman_status(attempts))
+        print(hangman_status(attempts))
         print("\n")
         print(" ".join(show_answer))
         # ask player to take their turn
@@ -147,11 +147,12 @@ def start_game(word):
             print("\033[0mAttempts Remaining: ", attempts)
             guesses.append(players_turn)
             print("\033[0mYou have used these letters: ")
+            print(hangman_status(attempts))
             print(" ".join(guesses))
         else:
-            print("\033[0mWOO you got it! \n")
+            print("\033[0;32mWOO you got it! \n")
             guesses.append(players_turn)
-            print("You have used these letters: ")
+            print("\033[0mYou have used these letters: ")
             print(" ".join(guesses))
             if players_turn in letters:
                 letters.remove(players_turn)
@@ -165,7 +166,7 @@ def start_game(word):
             print("\033[0;31mAwh you lose!")
             print("The correct word was", word, "\n")
             
-    #Ask if they want to play again
+    #Ask user if they want to play again
     print("\033[0;36mWould you like to play again?")
     play_again()
 
@@ -183,6 +184,78 @@ def play_again():
             menu()
         else:
             print("\033[0;31mPlease make a valid choice.")
+
+
+def hangman_status(attempts):
+    """
+    Status of the hangman.
+    """
+    stages = [
+        """
+            --------
+            |      |
+            |      o
+            |     \\|/
+            |      |
+            |     / \\
+            ---
+            """,
+        """
+            --------
+            |      |
+            |      o
+            |     \\|/
+            |      |
+            |     /
+            ---
+            """,
+        """
+            --------
+            |      |
+            |      o
+            |     \\|/
+            |      |
+            |
+            ---
+            """,
+        """
+            --------
+            |      |
+            |      o
+            |     \\|
+            |      |
+            |
+            ---
+            """,
+        """
+            --------
+            |      |
+            |      o
+            |      |
+            |      |
+            |
+            ---
+            """,
+        """
+            --------
+            |      |
+            |      o
+            |
+            |
+            |
+            ---
+            """,
+        """
+            --------
+            |      |
+            |
+            |
+            |
+            |
+            ---
+            """,
+    ]
+    return stages[attempts]
 
 
 def game():
