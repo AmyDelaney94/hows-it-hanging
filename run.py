@@ -94,7 +94,7 @@ def exit():
     """
     Exit game function
     """
-    print("\033[0;36mThanks for playing Goodbye!")
+    print("\033[0;36mThanks for playing How's it Hanging Goodbye!")
     sys.exit()
 
 
