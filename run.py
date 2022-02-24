@@ -128,7 +128,7 @@ def start_game(word):
     # If no turns left shows right answer
     while attempts > 0 and len(letters) > 0:
         show_answer = [
-            letters if letters in guesses else "_" for letters in word 
+            letters if letters in guesses else "_" for letters in word
         ]
         print(hangman_status(attempts))
         print("\n")
@@ -158,22 +158,22 @@ def start_game(word):
                 letters.remove(players_turn)
             else:
                 print("\033[0;31mPlease make a valid choice.")
-        
+
         if attempts == 0:
-            #No more attempts left.
+            # No more attempts left.
             print("\033[0mAttempts Remaining: ", attempts)
             guesses.append(players_turn)
             print("\033[0;31mAwh you lose!")
             print("The correct word was", word, "\n")
-            
-    #Ask user if they want to play again
+
+    # Ask user if they want to play again
     print("\033[0;36mWould you like to play again?")
     play_again()
 
 
 def play_again():
     """
-    Function to allow player to play again or exit to the menu. 
+    Function to allow player to play again or exit to the menu.
     """
     while True:
         go_again = input("Press 1 for Yes or 2 for No: ")
