@@ -1,6 +1,7 @@
 """
 This section contains all imports
 """
+import os
 import sys
 import random
 from words import easy_selection
@@ -135,10 +136,22 @@ def start_game(word):
         print(" ".join(show_answer))
         # ask player to take their turn
         # .upper used to capitalise letters to match word lists
-        players_turn = input("\033[0mPlease choose a letter:\n").upper()
+        players_turn = input("\033[0mPlease choose a letter:\n").upper().strip()
+        # clear terminal
+        os.system("cls" if os.name == "nt" else "clear")
         # Test for valid selection made
         if players_turn in guesses:
             print("\033[1;31mOops you already guessed ", players_turn, "\n")
+            print("You have used these letters: ")
+            print(" ".join(guesses))
+        elif len(players_turn) != 1:
+            print(
+                "\033[1;31mOops please only enter one guesss at a time\n"
+            )
+            print("You have used these letters: ")
+            print(" ".join(guesses))
+        elif not players_turn.isalpha():
+            print("\033[1;31mOops ", players_turn, " is not a letter\n")
             print("You have used these letters: ")
             print(" ".join(guesses))
         elif players_turn not in word:
@@ -147,7 +160,6 @@ def start_game(word):
             print("\033[0mAttempts Remaining: ", attempts)
             guesses.append(players_turn)
             print("\033[0mYou have used these letters: ")
-            print(hangman_status(attempts))
             print(" ".join(guesses))
         else:
             print("\033[0;32mWOO you got it! \n")
