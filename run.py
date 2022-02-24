@@ -136,7 +136,8 @@ def start_game(word):
         print(" ".join(show_answer))
         # ask player to take their turn
         # .upper used to capitalise letters to match word lists
-        players_turn = input("\033[0mPlease choose a letter:\n").upper().strip()
+        players_turn = input(
+            "\033[0mPlease choose a letter:\n").upper().strip()
         # clear terminal
         os.system("cls" if os.name == "nt" else "clear")
         # Test for valid selection made
@@ -146,7 +147,7 @@ def start_game(word):
             print(" ".join(guesses))
         elif len(players_turn) != 1:
             print(
-                "\033[1;31mOops please only enter one guesss at a time\n"
+                "\033[1;31mOops please only enter one guess at a time\n"
             )
             print("You have used these letters: ")
             print(" ".join(guesses))
@@ -176,9 +177,10 @@ def start_game(word):
             print("\033[0mAttempts Remaining: ", attempts)
             guesses.append(players_turn)
             print("\033[0;31mAwh you lose!")
-            print("The correct word was", word, "\n")
+
 
     # Ask user if they want to play again
+    print("The correct word was", word, "\n")
     print("\033[0;36mWould you like to play again?")
     play_again()
 
