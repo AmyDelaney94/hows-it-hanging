@@ -178,7 +178,6 @@ def start_game(word):
             guesses.append(players_turn)
             print("\033[0;31mAwh you lose!")
 
-
     # Ask user if they want to play again
     print("The correct word was", word, "\n")
     print("\033[0;36mWould you like to play again?")
