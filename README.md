@@ -43,17 +43,15 @@ Hangman is a word guessing game. Traditionally hangman is a game played with pen
 ### User Stories
 - As a player, I want the instructions to be easily accessable.
 - As a player, I want the game to be user friendly.
-- As a player, I want the game to work on multiple devices.
 - As a player, I want the game to be fun and engaging.
 - As a player, I want there to be a selection of levels. 
 
 <!-- TOC --><a name="coloured-text"></a>
 ### Coloured Text
-- Throughout the design of the project I followed a flow chart and extended this logic to the visual design of the game. 
-    - The colour red was used for errors and wrong guesses. 
-    - The colour cyan was used for input lines. 
-    - The colour green was used for the instructions menu and for correct guesses.  
-
+- Throughout the design of the project I followed a flow chart and extended this logic to the visual design of the game. I decided to implement a simple colour scheme to improve the overall user experience.
+    - The colour red ("\033[0;31m) was used for errors and wrong guesses. 
+    - The colour cyan ("\033[0;36m) was used for input lines. 
+    - The colour green ("\033[0;32m) was used for the instructions menu and for correct guesses.
 
 <!-- TOC --><a name="process-flow-chart"></a>
 ### Process Flow Chart
@@ -61,26 +59,30 @@ Lucid Charts was used to design the logic used in the development of this game.
 
 <!-- TOC --><a name="game-features"></a>
 ### Game Features
-- Choice of levels
-- Name input
+- Welcome page
+    - 
 - Instructions 
-- 
+- Game
+- Winning Message
+- Losing Message
+- Coloured Text
+- Choice of levels
+- Hangman Images
+- Play again
+- Clear Terminal
  
-<!-- TOC --><a name="technology-used"></a>
-#### Technology Used
 <!-- TOC --><a name="languages-used"></a>
 #### Languages Used
-- Python
+- <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"> Python</a>
 
-- GitPod
-    -  GitPod was used for writing code, committing, and then pushing to GitHub.
-- GitHub
-    - GitHub was used to store the project after pushing.
-- Lucid Charts
-
-- Am I Responsive?
-    - Am I Responsive was used in order to see responsive design throughout the process.
-
+<!-- TOC --><a name="technology-used"></a>
+#### Technology Used
+- <a href="https://gitpod.io/workspaces">GitPod</a> was used for writing code, committing, and then pushing to GitHub.
+- <a href="https://github.com/AmyDelaney94/">Github</a> was used to store the project after pushing.
+- <a href="https://lucid.app/documents#/dashboard">Lucid Charts</a> was used to create and design the flow chart used in the logical design of this project. 
+- <a href="http://ami.responsivedesign.is/">Am I Responsive?</a> was used in order to see responsive design throughout the process.
+- <a href="http://pep8online.com/">PEP8 online check</a> was used to validate the python code. 
+- <a href="http://pep8online.com/">Heroku</a> was used to deploy the application. 
 
 <!-- TOC --><a name="testing"></a>
 ### Testing
