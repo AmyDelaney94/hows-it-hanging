@@ -4,7 +4,6 @@
 <img src="assets/images/amiresponsive.png" alt="Image of the site on different device screen sizes">
 Hangman is a word guessing game. Traditionally hangman is a game played with pen and paper and two or more people. One person picks a word and lets the others guess the letters to find the correct word. For this project I created an electronic version of this game where the user plays against the computer. This was achieved using python to slect a random word from a list and check if guesses are right, wrong, already guessed or invalid. My version of the game has two levels of difficulty, easy and hard. A full description of the rules and traditional version of the game can be found <a href="https://en.wikipedia.org/wiki/Hangman_(game)"> here</a>.  
 
-
 ## Table of Contents
 <!-- TOC start -->
 - [How's it Hanging](#hows-it-hanging)
@@ -110,12 +109,10 @@ Lucid Charts was used to design the logic used in the development of this game.
 
 <!-- TOC --><a name="references"></a>
 ### References:
-- W3Schools was used as a resource for solving syntax errors and for the isalpha()
-method.https://www.w3schools.com/python/ref_string_isalpha.asp
-- Askpython was used for the implementation of sys.exit()
-https://www.askpython.com/python/examples/exit-a-python-program
-- Stack Overflow Used for assistance with troubleshooting issues.
-- https://www.yawintutor.com/indentationerror-expected-an-indented-block-in-python/#:~:text=The%20python%20IndentationError%3A%20expected%20an,mix%20of%20tabs%20and%20spaces. used for fixing syntax and coding errors. 
+- <a href="https://www.w3schools.com/python/ref_string_isalpha.asp">W3Schools </a>was used as a resource for solving syntax errors and for the isalpha() method. 
+- <a href="https://www.askpython.com/python/examples/exit-a-python-program">Askpython </a>was used for the implementation of sys.exit()
+- <a href="https://stackoverflow.com/">Stack Overflow </a> was used for assistance with troubleshooting issues.
+- <a href="https://www.yawintutor.com/indentationerror-expected-an-indented-block-in-python/#:~:text=The%20python%20IndentationError%3A%20expected%20an,mix%20of%20tabs%20and%20spaces">Yawin Tutor </a>was used for fixing syntax and coding errors that appeared throughout the coding process. 
 
 
 <!-- TOC --><a name="acknowledgements"></a>
