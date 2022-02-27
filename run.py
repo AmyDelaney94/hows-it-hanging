@@ -1,9 +1,11 @@
 """
 This section contains all imports
 """
+# External import statements
 import os
 import sys
 import random
+# Import statemnts I created for this game.
 from words import easy_selection
 from words import hard_selection
 
@@ -18,6 +20,7 @@ def get_name():
     print("************************\n")
 
     while True:
+        # Name accepts all characters to allow users to get creative
         name_data = input("\033[0;36mEnter your name here: ")
 
         if validate_data(name_data):
@@ -29,6 +32,7 @@ def validate_data(name):
     """
     Validates user input for name
     """
+    # name cannot be blank.
     try:
         if name == "":
             raise ValueError("\033[0;31mPlease input a name \n")
@@ -145,12 +149,14 @@ def start_game(word):
             print("\033[1;31mOops you already guessed ", players_turn, "\n")
             print("You have used these letters: ")
             print(" ".join(guesses))
+        # only accept one character per guess.
         elif len(players_turn) != 1:
             print(
                 "\033[1;31mOops please only enter one guess at a time\n"
             )
             print("You have used these letters: ")
             print(" ".join(guesses))
+        # ensure guess is a Letter only.
         elif not players_turn.isalpha():
             print("\033[1;31mOops ", players_turn, " is not a letter\n")
             print("You have used these letters: ")
@@ -189,6 +195,7 @@ def play_again():
     Function to allow player to play again or exit to the menu.
     """
     while True:
+        # go_again only accepts 1 or 2 otherwise an error message is shown.
         go_again = input("Press 1 for Yes or 2 for No: ")
 
         if go_again == '1':
