@@ -34,8 +34,9 @@ Hangman is a word guessing game. Traditionally hangman is a game played with pen
 <!-- TOC --><a name="project-goals"></a>
 ### Project Goals
 - The game is easy to navigate and user friendly.
-- The game to be interactive for the user and is responsive on mutiple devices ranging from mobile to desktop.
-- The game doesn't have a conflicting colour scheme making it easy to view and understand.
+- The game to loop and allow the player to continue to play after each game. 
+- The game should have a choice of difficulty levels.
+- It should be clear how many attempts are left in the game. 
 - To provide the user with an easy to find instructions section to explain how the game works.
 
 <!-- TOC --><a name="user-stories"></a>
@@ -85,8 +86,16 @@ Lucid Charts was used to design the logic used in the development of this game.
 ### Testing
 <!-- TOC --><a name="user-stories-testing"></a>
 #### User Stories Testing
-
-
+- As a user I want the game to be easy to navigate.
+    - This was achieved by using the numbers 1 and 2 for Yes and No consistently throughout the game. 
+- As a user I want the game to loop and allow players to continue playing or exit after each round. 
+    - This was achieved by asking player if they want to play again after each win or loss with 1 starting the game again and 2 bringing the user back to the main menu. 
+- As a user I want it to be clear how many attempts are left.
+    - This was achieved by printing the remaining attempts after each round of the game. 
+- As a user I want to give the user a choice of difficulty.
+    - This was achieved by providing the user with a choice of easy or hard difficulty levels at the start of each game. 
+- To provide the user with an easy to find instructions section to explain how the game works.
+    - This was achieved by providing an instructions option on the main menu. 
 
 <!-- TOC --><a name="bugs"></a>
 #### Bugs:
