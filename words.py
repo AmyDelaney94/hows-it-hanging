@@ -41,7 +41,7 @@ easy_selection = [
     'SHIFT',
     'ROYAL',
     'MAGIC',
-    'GAURD',
+    'GUARD',
     'PEACE'
 ]
 
@@ -64,7 +64,7 @@ hard_selection = [
     'BACKDATES',
     'CABINETRY',
     'DAMPENERS',
-    'gALAVANTS',
+    'GALAVANTS',
     'MACADAMIA',
     'OBLIGATED',
     'QUADRATIC',

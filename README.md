@@ -69,6 +69,11 @@ Lucid Charts was used to design the logic used in the development of this game.
 - Play again
 - Clear Terminal
  
+<!-- TOC --><a name="future-features"></a>
+### Future Features
+- High Score Section
+    - Given more time I would add an option to see the previous high scores. This would achieved using google sheets. 
+
 <!-- TOC --><a name="languages-used"></a>
 #### Languages Used
 - <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"> Python</a>
@@ -84,6 +89,10 @@ Lucid Charts was used to design the logic used in the development of this game.
 
 <!-- TOC --><a name="testing"></a>
 ### Testing
+--|--|--|--
+Feature | Outcome | Example | Pass
+Welcome | 
+
 <!-- TOC --><a name="user-stories-testing"></a>
 #### User Stories Testing
 - As a user I want the game to be easy to navigate.
