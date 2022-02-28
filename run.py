@@ -107,7 +107,6 @@ def choose_word():
     """
     Generates a random word from the easy or hard selection lists.
     """
-    # level_selection = input("\033[0;36mPlease choose a difficulty level: \n")
     # Test for valid selection made
     while True:
         difficulty = input("\033[0;36mPress 1 for Easy and 2 for Hard: ")

@@ -58,8 +58,7 @@ Lucid Charts was used to design the logic used in the development of this game.
 
 <!-- TOC --><a name="game-features"></a>
 ### Game Features
-- Welcome page
-    - 
+- Welcome page 
 - Instructions 
 - Game
 - Winning Message
