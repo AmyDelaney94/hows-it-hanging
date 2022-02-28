@@ -60,17 +60,17 @@ Lucid Charts was used to design the logic used in the development of this game.
 ### Game Features
 Feature | Description | Example
 | --- | --- | --- |
-Welcome page
-Name 
-Instructions | Simple game instuctions were shown to the user | <img src="assets/images/instructionstest.png" alt="Image of instructions menu"> 
-Game
-Winning Message
-Losing Message
-Coloured Text
-Choice of levels
-Hangman Images
-Play again
-Clear Terminal
+Welcome page | Welcome screen | <img src="assets/images/welcome.png" alt="Image of opening page"> 
+Name | Asking for users name all characters valid to allow individuality | <img src="assets/images/name.png" alt="Image of name input section"> 
+Instructions | Simple game instuctions are shown to the user if selected | <img src="assets/images/instructionstest.png" alt="Image of instructions menu"> 
+Attempts | Screen displayed with remaining attempts this counts down with every wrong guess | <img src="assets/screenshots/lose.png" alt="Image of remaining attempts">
+Letters Played | Display of previous guesses is shown after every turn | <img src="assets/screenshots/lose.png" alt="Image of the display of previous guesses">  
+Winning Message | Screen displayed when user wins | <img src="assets/images/gamewon.png" alt="Image of Winning game"> 
+Losing Message | Screen displayed when user loses | <img src="assets/images/gameover.png" alt="Image of losing game"> 
+Choice of levels | Screen displayed for choice of levels. Options are 1 for easy and 2 for hard. The choice determines how many letters will be in the word. | <img src="assets/screenshots/leveloption2test.png" alt="Image of difficulty selection"> 
+Hangman Images | |
+Play again | Screen displayed asking to play again giving the user the option to 1. go again or 2. return to the main menu| <img src="assets/images/playagain.png" alt="Image of play again screen"> 
+Clear Terminal | Terminal cleared between turns to improve overall user experience | <img src="assets/images/clear.png" alt="shows just one hangman on screen"> 
  
 <!-- TOC --><a name="future-features"></a>
 ### Future Features
