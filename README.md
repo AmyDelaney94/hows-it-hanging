@@ -7,6 +7,7 @@ Hangman is a word guessing game. Traditionally hangman is a game played with pen
 ## Table of Contents
 <!-- TOC start -->
 - [How's it Hanging](#hows-it-hanging)
+  * [Flow Chart](#flow-chart)
   * [User Experience](#user-experience)
     + [Project Goals](#project-goals)
     + [User Stories](#user-stories)
@@ -28,6 +29,8 @@ Hangman is a word guessing game. Traditionally hangman is a game played with pen
 
 <a href="https://hows-ithanging.herokuapp.com/">A link to the deployed website can be found here</a>.
 
+<!-- TOC --><a name="flow-chart"></a>
+## Flow Chart
 
 <!-- TOC --><a name="user-experience"></a>
 ## User Experience
