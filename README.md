@@ -58,16 +58,19 @@ Lucid Charts was used to design the logic used in the development of this game.
 
 <!-- TOC --><a name="game-features"></a>
 ### Game Features
-- Welcome page 
-- Instructions 
-- Game
-- Winning Message
-- Losing Message
-- Coloured Text
-- Choice of levels
-- Hangman Images
-- Play again
-- Clear Terminal
+Feature | Description | Example
+| --- | --- | --- |
+Welcome page
+Name 
+Instructions | Simple game instuctions were shown to the user | <img src="assets/images/instructionstest.png" alt="Image of instructions menu"> 
+Game
+Winning Message
+Losing Message
+Coloured Text
+Choice of levels
+Hangman Images
+Play again
+Clear Terminal
  
 <!-- TOC --><a name="future-features"></a>
 ### Future Features
@@ -89,9 +92,40 @@ Lucid Charts was used to design the logic used in the development of this game.
 
 <!-- TOC --><a name="testing"></a>
 ### Testing
---|--|--|--
+
 Feature | Outcome | Example | Pass
-Welcome | 
+| --- | --- | --- |--- |
+Name Input | Validate if field is empty | <img src="assets/screenshots/namevalidentryerror.png" alt="Image of error message if no name entered"> | Pass
+Name Input | Validate if entry is valid | <img src="assets/screenshots/namevalidentry.png" alt="Image valid name entered"> | Pass
+Main menu | Validate if entry is valid - special character input | <img src="assets/screenshots/mainmenuspecialtest.png" alt="Image of error message for invalid character entry"> | Pass
+Main menu | Validate if entry is valid - letter input | <img src="assets/screenshots/mainmenulettertest.png" alt="Image of error message for invalid letter entry"> | Pass
+Main menu | Validate if entry is valid - number input | <img src="assets/screenshots/mainmenunumtest.png" alt="Image of error message for invalid number entry"> | Pass
+Main menu | Validate if field is empty | <img src="assets/screenshots/mainmenuerror.png" alt="Image of error for empty field"> | Pass
+Instructions Options | Validate if selection is valid - option 1 | <img src="assets/screenshots/instructionsoption1test.png" alt="image of tets for option 1"> | Pass
+Instructions Options | Validate if selection is valid - option 2 | <img src="assets/screenshots/instructionsoption2test.png" alt="image of tets for option 2"> | Pass
+Instructions Options | Validate if field is empty | <img src="assets/screenshots/insctructionspacetest.png" alt="Image of error message for empty field" > | Pass
+Instructions Options | Validate if selection is valid - letter test | <img src="assets/screenshots/instructionlettertest.png" alt="Image of error message for invalid letter entry"> | Pass
+Instructions Options | Validate if selection is valid - wrong number test | <img src="assets/screenshots/instructionnumtest.png" alt="Image of error message for invalid number entry"> | Pass
+Instructions Options | Validate if selection is valid - special character test | <img src="assets/screenshots/instructionspecialtest.png" alt="Image of error message for invalid entry"> | Pass
+Level Selection | Validate if selection is valid - option 1 | <img src="assets/screenshots/leveloption1test.png" alt="Image of Level 1 test"> | Pass
+Level Selection | Validate if selection is valid - option 2 | <img src="assets/screenshots/leveloption2test.png" alt="Image of Level 2 test"> > | Pass
+Level Selection | Validate if field is empty | <img ssrc="assets/screenshots/leveloptiontest.png" alt="Image of empty field test"> > | Pass
+Level Selection | Validate if selection is valid - letter | <img src="assets/screenshots/leveloptionlettertest.png" alt="Image of error message for invalid letter entry"> > | Pass
+Level Selection | Validate if selection is valid - Number | <img src="assets/screenshots/leveloptionnumbertest.png" alt="Image of error message for invalid Number entry"> > | Pass
+Level Selection | Validate if selection is valid - Special Character | <img src="assets/screenshots/levelspecial.png" alt="Image of error message for invalid character entry"> > | Pass
+Game Play | Validate if selection is valid - special character test | <img src="assets/screenshots/gamespecialtest.png" alt="Image of error message for invalid character entry"> | Pass
+Game Play | Validate if selection is valid - Number test | <img src="assets/screenshots/gamenumtest.png" alt="Image of error message for invalid number entry"> | Pass
+Game Play | Validate if field is empty | <img src="assets/screenshots/gamespacetest.png" alt="Image of error message for empty field"> | Pass
+Game Play | Validate if selection is valid - Multiple character test | <img src="assets/screenshots/gamemultierror.png" alt="Images of error messages for multiple character guesses made"> <img src="assets/screenshots/gamemultiguesstetst.png"> | Pass
+Winning Message | Validate if message is correct | <img src="assets/screenshots/win.png" alt="Message for correct guess and winning game"> | Pass
+Losing Message | Validate if message is correct | <img src="assets/screenshots/lose.png" alt="Message for incorrect guess and losing game"> | Pass
+Play again input | Validate if selection is valid  - option 1 | <img src="assets/screenshots/againop1.png" alt="Image for play again option 1"> | Pass
+Play again input | Validate if selection is valid  - option 2 | <img src="assets/screenshots/againop2.png" alt="Image for play again option 2"> | Pass
+Play again input | Validate if selection is valid  - letter | <img src="assets/screenshots/againletter.png" alt="Image for play again invalid letter entry"> | Pass
+Play again input | Validate if selection is valid  - number | <img src="assets/screenshots/againnum.png" alt="Image for play again invalid number entry"> | Pass
+Play again input | Validate if selection is valid  - special | <img src="assets/screenshots/againspecial.png" alt="Image for play again invalid character entry"> | Pass
+Play again input | Validate if field is empty | <img src="assets/screenshots/againblank.png" alt="Image for play again error message">| Pass
+Exit Game option | Validate if field is empty | <img src="assets/screenshots/mainmenuexittest.png" alt="Image of exit message"> | Pass
 
 <!-- TOC --><a name="user-stories-testing"></a>
 #### User Stories Testing
