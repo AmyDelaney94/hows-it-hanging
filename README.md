@@ -17,6 +17,7 @@ Hangman is a word guessing game. Traditionally hangman is a game played with pen
       - [Languages Used](#languages-used)
     + [Testing](#testing)
       - [User Stories Testing](#user-stories-testing)
+      - [Validation Testing](#validation-testing)
       - [Bugs:](#bugs)
         * [Fixed Bugs:](#fixed-bugs)
     + [Deployment:](#deployment)
@@ -139,6 +140,17 @@ Exit Game option | Validate if field is empty | <img src="assets/screenshots/mai
     - This was achieved by providing the user with a choice of easy or hard difficulty levels at the start of each game. 
 - To provide the user with an easy to find instructions section to explain how the game works.
     - This was achieved by providing an instructions option on the main menu. 
+
+<!-- TOC --><a name="validation-testing"></a>
+#### Validation Testing:
+Testing | Results 
+| --- | --- | 
+Initial validation testing | <img src="assets/images/initialvalidatorresults.png" alt="Image of inital validator results">  
+Final validation testing | <img src="assets/images/finalcodevalidation.png" alt="Image of final validator results"> 
+Words.py validation testing | <img src="assets/images/wordstest.png" alt="Image of words list validator results"> 
+
+- The code was tested using a PEP8 validator and the initial results were fixed by correcting all of the errors and warnings shown until none remained. 
+
 
 <!-- TOC --><a name="bugs"></a>
 #### Bugs:
