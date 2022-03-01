@@ -78,9 +78,11 @@ Clear Terminal | Terminal cleared between turns to improve overall user experien
  
 <!-- TOC --><a name="future-features"></a>
 ### Future Features
-- High Score Section
-    - Given more time I would add an option to see the previous high scores. This would achieved using google sheets. 
-
+- High Score Display
+    - Given more time I would add an option to see the previousA future feature that I would like to add to the app is to display high scores. This would be achieved using a Google Spreadsheet to store the number of attempts it took, or amount of games won for each name entered. This scoreboard could then be displayed by printing the contents to the terminal. 
+- Level of Difficulty
+    - Although this game provides users with the choice of playing an Easy or Hard game I would like to add more attempts to the Easy level to further distinguish between the two levels. This would be achieved by saving the hangman images in a new file and calling the altered Easy diagrams for the Easy game or the Standard diagrams for the Hard game.
+     
 <!-- TOC --><a name="languages-used"></a>
 #### Languages Used
 - <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"> Python</a>
@@ -172,6 +174,7 @@ Heroku was used to deploy the application.
 
 * Commit changes and push them to GitHub.
 * Go to the Heroku's website.
+* Create an account or select log in. 
 * From the Heroku dashboard, click on "Create new app".
 * Enter the "App name" and "Choose a region" before clicking on "Create app".
 * Go to "Config Vars" under the "Settings" tab.
