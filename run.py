@@ -36,7 +36,7 @@ def validate_data(name):
     try:
         if name == "":
             raise ValueError("\033[0;31mPlease input a name \n")
-        elif len(name.strip()) == 0: 
+        elif len(name.strip()) == 0:
             raise ValueError("\033[0;31mPlease input a name \n")
 
     except ValueError as error:
