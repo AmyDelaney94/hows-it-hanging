@@ -93,6 +93,10 @@ Clear Terminal | Terminal cleared between turns to improve overall user experien
 - <a href="http://ami.responsivedesign.is/">Am I Responsive?</a> was used in order to see responsive design throughout the process.
 - <a href="http://pep8online.com/">PEP8 online check</a> was used to validate the python code. 
 - <a href="http://pep8online.com/">Heroku</a> was used to deploy the application. 
+- Built-in Python Libraries
+    - os -> The os library was imported to create a function to utilise the os.system to clear the terminal. This supports a positive user experience on game replay by clearing the previous gameplay and making the screen clearer and more structured.
+
+    - random -> The random library was imported to access the built-in method of generating a random number selection using the randint() method. This then is used to generate a random sequence of 4 numbers from a range of 1 – 10 for the secret code the user has to crack.
 
 <!-- TOC --><a name="testing"></a>
 ### Testing
