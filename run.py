@@ -21,7 +21,7 @@ def get_name():
 
     while True:
         # Name accepts all characters to allow users to get creative
-        name_data = input("\033[0;36mEnter your name here: ")
+        name_data = input("\033[0;36mEnter your name here: ").strip()
 
         if validate_data(name_data):
             print(f"Welcome {name_data} \n")
@@ -35,6 +35,8 @@ def validate_data(name):
     # name cannot be blank.
     try:
         if name == "":
+            raise ValueError("\033[0;31mPlease input a name \n")
+        elif len(name.strip()) == 0: 
             raise ValueError("\033[0;31mPlease input a name \n")
 
     except ValueError as error:
