@@ -82,7 +82,7 @@ Clear Terminal | Terminal cleared between turns to improve overall user experien
     - Given more time I would add an option to see the previousA future feature that I would like to add to the app is to display high scores. This would be achieved using a Google Spreadsheet to store the number of attempts it took, or amount of games won for each name entered. This scoreboard could then be displayed by printing the contents to the terminal. 
 - Level of Difficulty
     - Although this game provides users with the choice of playing an Easy or Hard game I would like to add more attempts to the Easy level to further distinguish between the two levels. This would be achieved by saving the hangman images in a new file and calling the altered Easy diagrams for the Easy game or the Standard diagrams for the Hard game.
-     
+
 <!-- TOC --><a name="languages-used"></a>
 #### Languages Used
 - <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"> Python</a>
@@ -96,9 +96,11 @@ Clear Terminal | Terminal cleared between turns to improve overall user experien
 - <a href="http://pep8online.com/">PEP8 online check</a> was used to validate the python code. 
 - <a href="http://pep8online.com/">Heroku</a> was used to deploy the application. 
 - Built-in Python Libraries
-    - os -> The os library was imported to create a function to utilise the os.system to clear the terminal. This supports a positive user experience on game replay by clearing the previous gameplay and making the screen clearer and more structured.
+    - os -> The os library was imported to create a function to utilise the os.system to clear the terminal. This library was imported to imrove the overall user experience and to ensure the terminal is clear between rounds. 
 
-    - random -> The random library was imported to access the built-in method of generating a random number selection using the randint() method. This then is used to generate a random sequence of 4 numbers from a range of 1 – 10 for the secret code the user has to crack.
+    - random -> The random library was imported to access the built-in method of generating a random word from the word.py file using the "random." method.
+
+    - sys -> The sys library was imported to to create a function that allows the user to exit the game. This was achieved using the built in sys.exit() method. 
 
 <!-- TOC --><a name="testing"></a>
 ### Testing
@@ -190,6 +192,7 @@ Heroku was used to deploy the application.
 
 <!-- TOC --><a name="references"></a>
 ### References:
+- The code used to create the images that display the hangman image to the user were adapted from youtube and github user Kiteco. 
 - <a href="https://www.w3schools.com/python/ref_string_isalpha.asp">W3Schools </a>was used as a resource for solving syntax errors and for the isalpha() method. 
 - <a href="https://www.askpython.com/python/examples/exit-a-python-program">Askpython </a>was used for the implementation of sys.exit()
 - <a href="https://stackoverflow.com/">Stack Overflow </a> was used for assistance with troubleshooting issues.
@@ -200,6 +203,6 @@ Heroku was used to deploy the application.
 ### Acknowledgements
 - First I would like to thank my Partner for his love and support throughout the completion of this project.
 - I would also like to thank my mentor Marcel for his advice and support.
-- My friends for constantly testing the project on their different devices.
+- My friends for constantly testing the project.
 - Tutor Assistance for their help and support.
 - Code Institute and its Slack community for their support and providing me with the necessary knowledge to complete this project.
