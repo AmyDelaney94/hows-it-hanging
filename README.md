@@ -2,7 +2,7 @@
 # How's it Hanging
 
 <img src="assets/images/amiresponsive.png" alt="Image of the site on different device screen sizes">
-Hangman is a word guessing game. Traditionally hangman is a game played with pen and paper and two or more people. One person picks a word and lets the others guess the letters to find the correct word. For this project I created an electronic version of this game where the user plays against the computer. This was achieved using python to slect a random word from a list and check if guesses are right, wrong, already guessed or invalid. My version of the game has two levels of difficulty, easy and hard. A full description of the rules and traditional version of the game can be found <a href="https://en.wikipedia.org/wiki/Hangman_(game)"> here</a>.  
+Hangman is a word guessing game. Traditionally hangman is a game played with pen and paper and two or more people. One person picks a word and lets the others guess the letters to find the correct word. For this project I created an electronic version of this game where the user plays against the computer. This was achieved using python to select a random word from a list and check if guesses are right, wrong, already guessed or invalid. My version of the game has two levels of difficulty, easy and hard. A full description of the rules and traditional version of the game can be found <a href="https://en.wikipedia.org/wiki/Hangman_(game)"> here</a>.  
 
 ## Table of Contents
 <!-- TOC start -->
@@ -46,7 +46,7 @@ Hangman is a word guessing game. Traditionally hangman is a game played with pen
 
 <!-- TOC --><a name="user-stories"></a>
 ### User Stories
-- As a player, I want the instructions to be easily accessable.
+- As a player, I want the instructions to be easily accessible.
 - As a player, I want the game to be user friendly.
 - As a player, I want the game to be fun and engaging.
 - As a player, I want there to be a selection of levels. 
@@ -56,7 +56,7 @@ Hangman is a word guessing game. Traditionally hangman is a game played with pen
 - Throughout the design of the project I followed a flow chart and extended this logic to the visual design of the game. I decided to implement a simple colour scheme to improve the overall user experience.
     - The colour red ("\033[0;31m) was used for errors and wrong guesses. 
     - The colour cyan ("\033[0;36m) was used for input lines. 
-    - The colour green ("\033[0;32m) was used for the instructions menu and for correct guesses.
+    - The colour green ("\033[0;32m) was used for the instruction's menu and for correct guesses.
 
 <!-- TOC --><a name="process-flow-chart"></a>
 ### Process Flow Chart
@@ -81,9 +81,9 @@ Clear Terminal | Terminal cleared between turns to improve overall user experien
 <!-- TOC --><a name="future-features"></a>
 ### Future Features
 - High Score Display
-    - Given more time I would add an option to see the previousA future feature that I would like to add to the app is to display high scores. This would be achieved using a Google Spreadsheet to store the number of attempts it took, or amount of games won for each name entered. This scoreboard could then be displayed by printing the contents to the terminal. 
+    - A future feature that I would like to add to the app is to display high scores. This would be achieved using a Google Spreadsheet to store the number of attempts it took, or numbers of games won for each name entered. This scoreboard could then be displayed by printing the contents to the terminal. 
 - Level of Difficulty
-    - Although this game provides users with the choice of playing an Easy or Hard game I would like to add more attempts to the Easy level to further distinguish between the two levels. This would be achieved by saving the hangman images in a new file and calling the altered Easy diagrams for the Easy game or the Standard diagrams for the Hard game.
+    - Although this game provides users with the choice of playing an Easy or Hard game, I would like to add more attempts to the Easy level to further distinguish between the two levels. This would be achieved by saving the hangman images in a new file and calling the altered Easy diagrams for the Easy game or the Standard diagrams for the Hard game.
 
 <!-- TOC --><a name="languages-used"></a>
 #### Languages Used
@@ -98,11 +98,11 @@ Clear Terminal | Terminal cleared between turns to improve overall user experien
 - <a href="http://pep8online.com/">PEP8 online check</a> was used to validate the python code. 
 - <a href="http://pep8online.com/">Heroku</a> was used to deploy the application. 
 - Built-in Python Libraries
-    - os -> The os library was imported to create a function to utilise the os.system to clear the terminal. This library was imported to imrove the overall user experience and to ensure the terminal is clear between rounds. 
+    - os -> The os library was imported to create a function to utilise the os.system to clear the terminal. This library was imported to improve the overall user experience and to ensure the terminal is clear between rounds. 
 
     - random -> The random library was imported to access the built-in method of generating a random word from the word.py file using the "random." method.
 
-    - sys -> The sys library was imported to to create a function that allows the user to exit the game. This was achieved using the built in sys.exit() method. 
+    - sys -> The sys library was imported to create a function that allows the user to exit the game. This was achieved using the built in sys.exit() method. 
 
 <!-- TOC --><a name="testing"></a>
 ### Testing
@@ -173,7 +173,7 @@ Bug | Example |  Description | Fix
 | --- | --- | --- | --- | 
 Name Entry | <img src="assets/bugs/namebug.png" alt="Image of Name Bug"> <img src="assets/bugs/nameerror.png" alt="Image of Name Function Code"> | This bug was noted during testing. The original code allowed for a space to be entered as a Name. However, this was not a valid entry as it does not print a name to the terminal. | This was fixed by adding an elif statement to the code to ensure that a character needs to be entered. <img src="assets/bugs/namebugfix.png" alt="Image of Name fix">
 Numbers accepted | <img src="assets/bugs/numbersbug.png" alt="Image of Number being accepted"> | This bug was noted during testing of the game. It was noted that numbers were accepted as valid guesses by the user. | This bug was fixed by adding the isalpha() method to the elif statement for players_turn. <img src="assets/bugs/numberfix.png" alt="Image of input fix">
-Double Hangman | <img src="assets/bugs/doublehangmanbug.png" alt="Image of double hangman on terminal"> | This bug was observed during game play that if a guess was made two mangman images were printed in error. | This bug was fixed by removing the second print(hangman_status(attempts)) that was present in the code. <img src="assets/bugs/doublehangmanbugfix.png" alt="Image of double hangman code update">
+Double Hangman | <img src="assets/bugs/doublehangmanbug.png" alt="Image of double hangman on terminal"> | This bug was observed during game play that if a guess was made two hangman images were printed in error. | This bug was fixed by removing the second print(hangman_status(attempts)) that was present in the code. <img src="assets/bugs/doublehangmanbugfix.png" alt="Image of double hangman code update">
 
 <!-- TOC --><a name="deployment"></a>
 ### Deployment:
