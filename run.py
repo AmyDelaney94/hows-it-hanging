@@ -84,8 +84,6 @@ def instructions():
     )
     # Give option to play or return to menu.
     print("\033[0;36mAre you ready to play Hangman? \n")
-    # clear terminal
-    os.system("cls" if os.name == "nt" else "clear")
 
     # Test for valid selection made
     while True:
