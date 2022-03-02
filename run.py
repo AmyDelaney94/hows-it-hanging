@@ -81,6 +81,7 @@ def instructions():
         "are right the letter will appear on screen. \n3. If you "
         "are wrong the hangman will start to appear. \n4. You have "
         "6 attempts to guess correctly or its Game Over!! "
+        "\n5. If you have any issues please hit the Run Program Button!!"
     )
     # Give option to play or return to menu.
     print("\033[0;36mAre you ready to play Hangman? \n")
@@ -102,6 +103,7 @@ def exit():
     Exit game function
     """
     print("\033[0;36mThanks for playing How's it Hanging Goodbye!")
+    print("\033[0;36mIf you want to start over please hit the Run Program Button!")
     sys.exit()
 
 
