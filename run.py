@@ -103,7 +103,7 @@ def exit():
     Exit game function
     """
     print("\033[0;36mThanks for playing How's it Hanging Goodbye!")
-    print("\033[0;36mIf you want to start over please hit the Run Program Button!")
+    print("\033[0;36mIf you want to start over hit the Run Program Button!")
     sys.exit()
 
 
