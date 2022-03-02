@@ -74,7 +74,7 @@ Letters Played | Display of previous guesses is shown after every turn | <img sr
 Winning Message | Screen displayed when user wins | <img src="assets/images/gamewon.png" alt="Image of Winning game"> 
 Losing Message | Screen displayed when user loses | <img src="assets/images/gameover.png" alt="Image of losing game"> 
 Choice of levels | Screen displayed for choice of levels. Options are 1 for easy and 2 for hard. The choice determines how many letters will be in the word. | <img src="assets/screenshots/leveloption2test.png" alt="Image of difficulty selection"> 
-Hangman Images | |
+Hangman Images | Hangman Images displayed when wrong guesses made. | <img src="assets/images/hangmanimage1.png" alt="Image of hangman diagrams"> <img src="assets/images/hangmanimage2.png" alt="Image of hangman diagrams">
 Play again | Screen displayed asking to play again giving the user the option to 1. go again or 2. return to the main menu| <img src="assets/images/playagain.png" alt="Image of play again screen"> 
 Clear Terminal | Terminal cleared between turns to improve overall user experience | <img src="assets/images/clear.png" alt="shows just one hangman on screen"> 
  
