@@ -31,6 +31,8 @@ Hangman is a word guessing game. Traditionally hangman is a game played with pen
 
 <!-- TOC --><a name="flow-chart"></a>
 ## Flow Chart
+<img src="assets/images/flowchart.png" alt="Diagram of flow chart used to design this project">
+- The logic for this project was developed through the use of flow charts using the platform <a href="https://lucid.app/lucidchart/635f4e3b-525e-4ce1-a8b6-f5671a598593/edit?beaconFlowId=1FA3280D25486DE5&invitationId=inv_7f909668-620b-464a-a2c8-5221a92b20f6&page=0_0#"> Lucid Charts</a>.
 
 <!-- TOC --><a name="user-experience"></a>
 ## User Experience
